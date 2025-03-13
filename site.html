@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/stylesheet.css" rel="styles">
+    
+    <style>
+
+html {
+scroll-behavior: smooth;
+}
+
+.topbutton{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    padding: 10px;
+    border: 1px solid #F1CDB3;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+}
+
+.topbutton:hover{
+    background-color: #F1CDB3;
+}
+
+body{
+    margin: 0;
+}
+
+.wrapper{
+    background: url(/background-footer.png), linear-gradient(to right, #5B483A, #262425);        
+    padding: 30px 40px 0px 40px;
+}
+
+header{
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+}
+
+.logo-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #F1CDB3;
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+.logo-subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 13px;
+    vertical-align: middle; 
+}
+
+li{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #CDCDCD;
+    margin: 35px;
+} 
+
+.start-screen-puppy{
+    margin-top: 50px; 
+}
+
+main{
+    display: inline-flex;
+    align-items: center;
+}
+
+h2{
+    width: 310px;
+    height: 114px;
+    font-family: Georgia, serif;
+    font-size: 44px;
+    color: #FFFFFF;
+    font-weight: 400;  
+}
+
+.content{     
+    width: 460px;
+    height: 322px; 
+    margin-right: 70px;
+}
+
+.content div{
+    width: 310px;
+    height: 114px;
+}
+
+.subhead{
+    width: 460px;
+    height: 72px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #CDCDCD;
+}
+
+.friend{
+    width: 207px;
+    height: 52px;
+    background-color: #F1CDB3;
+    border-radius: 100px;
+    padding: 15px 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    border: none;
+}
+
+button:hover{
+    background-color: #FDDCC4;
+}
+
+nav a{
+    outline: none;
+    text-decoration: none;
+}
+
+nav a:link{
+    text-decoration: none;
+}
+
+nav a:visited{
+    color: #CDCDCD;
+}
+
+nav a:active{
+    color: #FAFAFA;
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.about-content{
+    display: flex;
+    
+    align-items: center;
+    margin: 80px 40px 100px 40px;
+}
+
+.about img{
+    margin: 0px 120px 0px 175px;
+}
+
+.about-text{
+    margin: 14px 175px 14px 120px;
+}
+
+.about-text h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #545454;
+    margin-bottom: 25px;
+}
+
+.about-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #4C4C4C;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 25px;
+}
+
+.pets-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F6F6F6;
+    padding-top: 80px;
+}
+
+.pets-content h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #545454;
+}
+
+.pets-content figure{
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;    
+}
+
+.pets-content figure:hover{
+    background-color: #FFFFFF;
+}
+
+
+.pets-content figcaption{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #545454;
+    margin-bottom: 30px;
+}
+
+.pets-content figure img{
+    margin-bottom: 30px;
+}
+
+.pets div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.arrow{
+    border: 2px solid #F1CDB3;
+    border-radius: 50%;
+    background-color: #FAFAFA;
+    width: 52px;
+    height: 52px;   
+}
+
+.arrow:hover{
+    background-color: #F1CDB3;
+}
+
+.learn{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: #292929;
+    background-color: #FAFAFA;
+    border: 2px solid #F1CDB3;
+    padding: 15px 45px;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+.learn:hover{
+    background-color: #F1CDB3;
+}
+
+.get{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: #292929;
+    background-color: #F1CDB3;
+    border: 2px solid #F1CDB3;
+    padding: 15px 45px;
+    border-radius: 100px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.get:hover{
+    background-color: #FAFAFA;
+    border: 2px solid #F1CDB3;
+}
+
+
+.list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 55px 120px;
+
+ }
+
+ .list figure{
+    background-color: #FFFFFF;
+ }
+
+ .help{
+    text-align: center;
+ }
+ 
+ .help-content{
+    margin: 80px 40px 100px 40px;
+ }
+ 
+ .help-content h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #545454;
+ }
+
+ .list figcaption{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #545454;
+ }
+
+ .donation{
+    padding: 80px 182px 100px 183px;
+    background-color: #F6F6F6;
+            
+ }
+
+ .donation-content{
+    display: flex;
+    align-items: center;     
+ }
+
+ .donation-content img{
+    margin-right: 30px;
+ }
+
+ .donation-content h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: #545454;
+    font-weight: 400;
+ }
+
+ .donation-content h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: #545454;
+    font-weight: 400;       
+ }
+
+ .donation-content p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #B2B2B2;
+    font-style: italic;
+ }
+
+ .donation-card{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #F1CDB3;
+    padding: 10px 15px;
+    border-radius: 9px;
+    margin: 20px 31px 20px 0px;
+    max-width: 349px;
+    max-height: 43px; 
+    gap: 10px;
+ }
+
+
+
+ .donation-card h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #545454;
+ }
+
+footer{
+    padding: 40px 40px 0px 40px;
+    background: url(/background-footer.png), linear-gradient(to right, #5B483A, #262425);
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.contacts figcaption{
+    float: right;
+    text-align: center;
+    padding: 5px 0px 4px 20px;
+    color: #F1CDB3;
+}
+
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+    </style>
+    
+</head>
+
+<body>
+    <div id="0" class="wrapper"> <!-- Начало шапки -->
+            <header> 
+                <div class="logo">
+                    <p class="logo-title"> Cozy House</p>
+                    <p class="logo-subtitle"> Shelter for pets in Boston</p>
+                </div>
+                <nav>
+                <ul>
+                    <li><a href="#1" rel="">About the shelter</a></li>
+                    <li><a href="#2" rel="">Our pets</a></li>
+                    <li><a href="#3" rel="">Help the shelter</a></li>
+                    <li><a href="#4" rel="">Contacts</a></li>
+                </ul>
+                </nav>
+            </header>
+
+        <main>  
+            <section class="content">
+                <div>
+                    <h2> Not only people need a house</h2>
+                </div>
+
+                    <p class="subhead"> We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+                    <button class="friend" name="makeafriend"> Make a friend </button>
+            </section>
+            <section class="start-screen-puppy"> 
+                    <img  src="https://s3-alpha-sig.figma.com/img/868a/5e48/f746a683887b0e363f7fdf5b80559e0b?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=axphiDBAZIb1aibF~FVCPXknTdCpZPekVRwHmMTRPALKAZUa3w-TY~7bNEtTfTENzfogl8J3xWMJudE4Jp6SRDvrOxusl38UJQJxd~zh~uDnQUNpWF23rBAWnR~3CmIMtqLfRLhWggyBBo2MVcBoAfhy7l2q-tOwwsHr8uY9PFr5z1CYJpUky8I0aTYZOgtA6tLW-r7qKAnSZ9HX88USRyYmRmL3FRm3cqNna5MfFqMki85HWspaTHY-LxsbjgOMOPloyV9rRjHX1~Z4qiBtMtHH775CEsp0JLGqPZPFzaMhVdR3GECfV~yDJovnWt6T6580VA~5boUHdCg7P4~47Q__" alt="dog">
+            </section>
+        </main>
+    </div>
+
+
+<div id="1" class="about"> <!-- Начало блока с информацией-->
+    <div class="about-content">
+        <img src="/pets.png" alt="dog with cat">
+            <div class="about-text">
+                <h3>About the shelter <br> “Cozy House”</h3>
+                <p> Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
+                <p> We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
+            </div>
+    </div>
+</div>    
+
+
+
+<div id="2" class="pets"> <!-- Начало блока со "слайдером"-->
+    <div class="pets-content"> 
+            <div>
+                <h3> Our friends who <br> are looking for a house </h3>
+            </div>
+                <div>
+                <button class="arrow"> &#11013; </button>
+                <figure> 
+                <img src="/catrin.png" alt="Katrin">
+                <figcaption> Katrine </figcaption>
+                <button class="learn"> Learn more </button>
+                </figure>
+                <figure>
+                <img src="/jannifer.png" alt="Jannifer">
+                <figcaption> Jannifer </figcaption>
+                <button class="learn"> Learn more </button>
+                </figure>
+                <figure> 
+                <img src="/woody.png">
+                <figcaption> Woody </figcaption>
+                <button class="learn"> Learn more </button>
+                </figure>
+                <button class="arrow"> &#10145; </button>
+            </div>
+            <div> 
+                <button class="get"> Get to know the rest</button>
+            </div>
+    </div>
+</div>
+
+<div id="3" class="help"> <!-- Начало блока с донатами -->
+    <div class="help-content">
+        <h3 style="margin-bottom: 60px;"> How you can help <br> our shelter</h3>
+            <div class="list">
+            <figure>
+            <img src="/Vector1.svg" alt="pet food"> 
+            <figcaption>Pet food</figcaption>
+            </figure>
+            <figure>
+            <img src="/icon-transportation.svg" alt="transportation"> 
+            <figcaption>Transportation</figcaption>
+            </figure>
+            <figure>
+            <img src="/toys.svg" alt="toys"> 
+            <figcaption>Toys</figcaption>
+            </figure>
+            <figure>
+            <img src="/bowls-and-cups.svg" alt="bowls-and-cups">
+            <figcaption>Bowls and cups</figcaption>
+            </figure>
+            <figure>
+            <img src="/shampoos.svg" alt="shampoos"> 
+            <figcaption>Shampoos </figcaption>
+            </figure>
+            <figure>
+            <img src="/icon-vitamins.svg" alt="vitamins"> 
+            <figcaption>Vitamins</figcaption>
+            </figure>
+            <figure>
+            <img src="/icon-medicines.svg" alt="medicines"> 
+            <figcaption>Medicines </figcaption>
+            </figure>
+            <figure>
+            <img src="/icon-collars-leashes.svg" alt="collars-leashes"> 
+            <figcaption>Collars/leashes</figcaption>
+            </figure>
+            <figure>
+            <img src="/icon-sleeping-area.svg" alt="sleeping-areas"> 
+            <figcaption>Sleeping areas </figcaption>
+            </figure>
+            </div>
+    </div>
+</div>
+
+<div class="donation"> 
+    <div class="donation-content">
+        <img src="/donation-dog.png" alt="brown-dog">
+            <div>
+                <h3> You can also <br> make a donation </h3>
+                <h5> Name of the bank / Type of bank account </h5>
+                    <div>
+                        <figure class="donation-card">
+                        <img src="/credit-card.svg" alt="card">
+                        <figcaption><h4>8380 2880 8028 8791 7435</h4></figcaption>
+                        </figure>
+                    </div>
+                        <p> Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+    </div>
+</div>   
+
+<footer id="4">  <!-- Подвал -->
+
+    <div class="footer-content">
+        <div>
+            <h3> For questions <br> and suggestions </h3>
+            <figure class="contacts">
+            <img src="/mail.svg" alt="mail">
+            <figcaption itemprop="email"> email@shelter.com </figcaption>
+            </figure>
+            <figure class="contacts">
+            <img src="icon-phone.svg" alt="phone">
+            <figcaption itemprop="telephone"> +13 674 567 75 54</figcaption>
+            </figure>
+        </div>
+
+        <div>
+            <h3> We are waiting <br> for your visit </h3>
+            <figure class="contacts">
+            <img src="/pin.svg" alt="pin"> 
+            <figcaption itemprop="address"> 1 Central Street, Boston (entrance from the store) </figcaption>
+            </figure>
+            <figure class="contacts">
+            <img src="/pin.svg" alt="pin"> 
+            <figcaption itemprop="address"> 18 South Park, London </figcaption>
+            </figure>
+        </div>
+        <img src="/footer-puppy.png" alt="dog with tongue">
+    </div>
+
+</footer>
+
+<a class="topbutton" href="#0" rel="top"> &#8593; </a> <!-- Кнопка наверх -->
+
+</body>
+</html>

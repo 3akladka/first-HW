@@ -1,0 +1,373 @@
+html {
+    scroll-behavior: smooth;
+    }
+    
+    .topbutton{
+        position: fixed;
+        left: 10px;
+        bottom: 10px;
+        padding: 10px;
+        border: 1px solid #F1CDB3;
+        border-radius: 30px;
+        background-color: #FFFFFF;
+        color: #000000;
+        text-decoration: none;
+    }
+    
+    .topbutton:hover{
+        background-color: #F1CDB3;
+    }
+    
+    body{
+        margin: 0;
+    }
+    
+    .wrapper{
+        background: url(/background-footer.png), linear-gradient(to right, #5B483A, #262425);        
+        padding: 30px 40px 0px 40px;
+    }
+    
+    header{
+         display: flex;
+         justify-content: space-between;
+         width: 100%;
+    }
+    
+    .logo-title{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #F1CDB3;
+        font-weight: 400;
+        font-size: 32px;
+        margin-bottom: 0px;
+    }
+    
+    .logo-subtitle{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #FFFFFF;
+        font-size: 13px;
+        vertical-align: middle; 
+    }
+    
+    li{
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: #CDCDCD;
+        margin: 35px;
+    } 
+    
+    .start-screen-puppy{
+        margin-top: 50px; 
+    }
+    
+    main{
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    h2{
+        width: 310px;
+        height: 114px;
+        font-family: Georgia, serif;
+        font-size: 44px;
+        color: #FFFFFF;
+        font-weight: 400;  
+    }
+    
+    .content{     
+        width: 460px;
+        height: 322px; 
+        margin-right: 70px;
+    }
+    
+    .content div{
+        width: 310px;
+        height: 114px;
+    }
+    
+    .subhead{
+        width: 460px;
+        height: 72px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: #CDCDCD;
+    }
+    
+    .friend{
+        width: 207px;
+        height: 52px;
+        background-color: #F1CDB3;
+        border-radius: 100px;
+        padding: 15px 45px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        border: none;
+    }
+    
+    button:hover{
+        background-color: #FDDCC4;
+    }
+    
+    nav a{
+        outline: none;
+        text-decoration: none;
+    }
+    
+    nav a:link{
+        text-decoration: none;
+    }
+    
+    nav a:visited{
+        color: #CDCDCD;
+    }
+    
+    nav a:active{
+        color: #FAFAFA;
+        border-bottom: 3px solid #F1CDB3;
+    }
+    
+    .about-content{
+        display: flex;
+        
+        align-items: center;
+        margin: 80px 40px 100px 40px;
+    }
+    
+    .about img{
+        margin: 0px 120px 0px 175px;
+    }
+    
+    .about-text{
+        margin: 14px 175px 14px 120px;
+    }
+    
+    .about-text h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+        font-weight: 400;
+        color: #545454;
+        margin-bottom: 25px;
+    }
+    
+    .about-text p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: #4C4C4C;
+        font-weight: 400;
+        line-height: 160%;
+        margin-bottom: 25px;
+    }
+    
+    .pets-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #F6F6F6;
+        padding-top: 80px;
+    }
+    
+    .pets-content h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+        font-weight: 400;
+        color: #545454;
+    }
+    
+    .pets-content figure{
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FAFAFA;    
+    }
+    
+    .pets-content figure:hover{
+        background-color: #FFFFFF;
+    }
+    
+    
+    .pets-content figcaption{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: #545454;
+        margin-bottom: 30px;
+    }
+    
+    .pets-content figure img{
+        margin-bottom: 30px;
+    }
+    
+    .pets div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .arrow{
+        border: 2px solid #F1CDB3;
+        border-radius: 50%;
+        background-color: #FAFAFA;
+        width: 52px;
+        height: 52px;   
+    }
+    
+    .arrow:hover{
+        background-color: #F1CDB3;
+    }
+    
+    .learn{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        color: #292929;
+        background-color: #FAFAFA;
+        border: 2px solid #F1CDB3;
+        padding: 15px 45px;
+        border-radius: 100px;
+        margin-bottom: 30px;
+    }
+    
+    .learn:hover{
+        background-color: #F1CDB3;
+    }
+    
+    .get{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        color: #292929;
+        background-color: #F1CDB3;
+        border: 2px solid #F1CDB3;
+        padding: 15px 45px;
+        border-radius: 100px;
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+    
+    .get:hover{
+        background-color: #FAFAFA;
+        border: 2px solid #F1CDB3;
+    }
+    
+    
+    .list{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 55px 120px;
+    
+     }
+    
+     .list figure{
+        background-color: #FFFFFF;
+     }
+    
+     .help{
+        text-align: center;
+     }
+     
+     .help-content{
+        margin: 80px 40px 100px 40px;
+     }
+     
+     .help-content h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+        font-weight: 400;
+        color: #545454;
+     }
+    
+     .list figcaption{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        margin-top: 30px;
+        color: #545454;
+     }
+    
+     .donation{
+        padding: 80px 182px 100px 183px;
+        background-color: #F6F6F6;
+                
+     }
+    
+     .donation-content{
+        display: flex;
+        align-items: center;     
+     }
+    
+     .donation-content img{
+        margin-right: 30px;
+     }
+    
+     .donation-content h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+        color: #545454;
+        font-weight: 400;
+     }
+    
+     .donation-content h5{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        color: #545454;
+        font-weight: 400;       
+     }
+    
+     .donation-content p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #B2B2B2;
+        font-style: italic;
+     }
+    
+     .donation-card{
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: #F1CDB3;
+        padding: 10px 15px;
+        border-radius: 9px;
+        margin: 20px 31px 20px 0px;
+        max-width: 349px;
+        max-height: 43px; 
+        gap: 10px;
+     }
+    
+    
+    
+     .donation-card h4{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #545454;
+     }
+    
+    footer{
+        padding: 40px 40px 0px 40px;
+        background: url(/background-footer.png), linear-gradient(to right, #5B483A, #262425);
+    }
+    
+    .contacts{
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+    
+    .contacts figcaption{
+        float: right;
+        text-align: center;
+        padding: 5px 0px 4px 20px;
+        color: #F1CDB3;
+    }
+    
+    
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    footer h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
